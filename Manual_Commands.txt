@@ -1,0 +1,8 @@
+
+# READ FILE FROM ESP32
+
+esptool.exe --port COM5 read_flash 0x00000 0x400000 flash_contents.bin
+
+# WRITE FILE FROM ESP32
+
+esptool.exe --port COM8 write_flash 0x00000 flash_contents.bin
